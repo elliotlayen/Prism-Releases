@@ -1,0 +1,21 @@
+name: Enhancement request
+description: Something Prism should do, or do better.
+title: "[Enhancement] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like Prism to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What are you doing today instead?
+      description: The job you are trying to get done, and how you handle it now (in the Designer, by hand, with another tool).
+  - type: input
+    id: version
+    attributes:
+      label: Prism version
+      placeholder: "2026.1.1"

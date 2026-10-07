@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in Prism did not work as it should.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Prism version
+      description: Help → About Prism, the number after "v".
+      placeholder: "2026.1.1"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what Prism did, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Scan a folder with …
+        2. Add a Text replace rule …
+        3. Dry Run …
+  - type: textarea
+    id: log
+    attributes:
+      label: Log lines
+      description: Help → Open Logs Folder, then paste the lines from prism.log around the time it happened. Remove anything you would rather not share.
+      render: text
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: Did any report file end up wrong?
+      options:
+        - label: Yes — I used Restore This Run (or need help restoring)
+        - label: No — nothing was applied, or the result was correct
