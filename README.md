@@ -160,6 +160,7 @@ The kind filter narrows the whole search: a criterion that only hits an excluded
 
 | Keys | Action |
 |---|---|
+| `Ctrl+Shift+O` | Scan a folder |
 | `Ctrl+F` | New search — or, with a search already open, jump to its first criterion |
 | `Ctrl+Enter` | Run the search (from a criterion box) |
 | `Ctrl+N` | New job |
